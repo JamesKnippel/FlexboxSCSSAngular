@@ -1,0 +1,8 @@
+@import '~sass/_mixins.scss';
+
+@include flex(1);
+
+.document-view {
+background-color: #fff;
+background-color: orangered;
+}
