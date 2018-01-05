@@ -1,0 +1,26 @@
+@mixin displayFlex {
+  :host {
+    display: -webkit-flex;
+    display: flex;
+  }
+}
+
+@mixin flexDirection($direction) {
+  :host {
+    -webkit-flex-direction: $direction;
+    flex-direction: $direction;
+  }
+}
+
+@mixin flexWrap($mode) {
+  :host {
+    -webkit-flex-wrap: $mode;
+    flex-wrap: $mode;
+  }
+}
+
+@mixin flex($grow: 0, $shrink: 1, $basis: auto) {
+  :host {
+    flex: $grow $shrink $basis;
+  }
+}
