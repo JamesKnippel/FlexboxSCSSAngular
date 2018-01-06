@@ -5,7 +5,53 @@
 
 .document-view {
   background-color: #fff;
-  background-color: orangered;
+  
   height: 80rem;
   @include flex(1);
+}
+
+.gallery {
+  @include flexbox;
+  &__photo {
+    width: 100%;
+    display: block;
+  }
+}
+
+
+// Main overview panel
+.overview {
+  @include flexbox;
+
+  &__heading {
+
+  }
+
+  &__stars {
+    /* boxes in flex elements */
+    margin-right: auto;
+  }
+
+  &__icon-star,
+  &__icon-location {
+    height: 1.75rem;
+    width: 1.75rem;
+    fill: var(--color-primary);
+  }
+
+  &__location {
+    // @include flex(1);
+  }
+
+  &__rating {
+
+  }
+
+  &__rating-average {
+
+  }
+
+  &__rating-count {
+
+  }
 }
