@@ -1,14 +1,19 @@
 @import '~sass/_mixins.scss';
 
-.detail {
 
+.detail {
 @include flexbox;
+padding: 4.5rem;
+background-color: var(--color-grey-light-1);
 }
 
 .description {
   background-color: orangered;
+  @include flex(0 0 60%);
+  margin-right: 4.5rem;
 }
 
 .user-options {
   background-color: aqua;
+  @include flex(1);
 }
