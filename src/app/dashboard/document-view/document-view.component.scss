@@ -1,8 +1,10 @@
 @import '~sass/_mixins.scss';
 
 @include ngflex(1);
+@include ngflexbox;
 
 .document-view {
-background-color: #fff;
-background-color: orangered;
+  background-color: #fff;
+  background-color: orangered;
+  @include flex(1);
 }

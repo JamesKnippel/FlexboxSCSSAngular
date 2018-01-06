@@ -1,8 +1,10 @@
 @import '~sass/_base';
 @import '~sass/_mixins';
 
+@include ngflexbox;
 @include ngflex(0 0 18%);
 
 .sidebar {
   background-color: var(--color-grey-dark-1);
+  @include flex(0 0 18%);
 }
