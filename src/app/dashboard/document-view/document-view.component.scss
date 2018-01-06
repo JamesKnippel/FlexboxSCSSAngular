@@ -22,6 +22,7 @@
 // Main overview panel
 .overview {
   @include flexbox;
+    border-bottom: 1px solid var(--color-grey-light-2);
 
   &__heading {
 
