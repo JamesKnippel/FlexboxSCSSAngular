@@ -1,4 +1,5 @@
 @import '~sass/_mixins.scss';
+@import '~sass/_base.scss';
 
 @include ngflex(1);
 @include ngflexbox;
@@ -53,16 +54,32 @@
     @include align-items(center);
   }
 
-  &__rating {
+  &__icon-location {
+    margin-right: .5rem;
+  }
 
+  &__rating {
+    background-color: var(--color-primary);
+    margin-left: 3rem;
+    padding: 0 2.25rem;
+    color: #fff;
+    @include align-self(stretch);
+
+    @include flexbox;
+    @include flex-direction(column);
+    @include align-items(center);
+    @include justify-content(center);
   }
 
   &__rating-average {
-
+    font-size: 2.25rem;
+    font-weight: 300;
+    margin-bottom: -3px;
   }
 
   &__rating-count {
-
+    font-size: .8rem;
+    text-transform: uppercase;
   }
 }
 
@@ -105,3 +122,4 @@
     box-shadow: none;
   }
 }
+

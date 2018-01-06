@@ -7,6 +7,7 @@ import { SidebarComponent } from './dashboard/sidebar/sidebar.component';
 import { DocumentViewComponent } from './dashboard/document-view/document-view.component';
 import { LandingComponent } from './dashboard/landing-component/landing-component.component';
 import { HeaderNavComponent } from './dashboard/header-nav/header-nav.component';
+import { DetailComponent } from './dashboard/detail/detail.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { HeaderNavComponent } from './dashboard/header-nav/header-nav.component'
     SidebarComponent,
     DocumentViewComponent,
     LandingComponent,
-    HeaderNavComponent
+    HeaderNavComponent,
+    DetailComponent
   ],
   imports: [
     BrowserModule,
