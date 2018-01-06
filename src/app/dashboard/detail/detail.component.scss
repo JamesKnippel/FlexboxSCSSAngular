@@ -1,0 +1,14 @@
+@import '~sass/_mixins.scss';
+
+.detail {
+
+@include flexbox;
+}
+
+.description {
+  background-color: orangered;
+}
+
+.user-options {
+  background-color: aqua;
+}
