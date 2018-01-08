@@ -1,6 +1,9 @@
 @import '~sass/_base.scss';
 @import '~sass/_mixins.scss';
-.container {
+
+// @include ngflexbox;
+
+:host {
   max-width: 120rem;
   margin: 8rem auto;
   background-color: var(--color-grey-light-2);
