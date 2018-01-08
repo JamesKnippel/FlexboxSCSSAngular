@@ -16,6 +16,10 @@
 
   /* centers items across the perpendicular cross axis */
   @include align-items(center);
+
+  @media only screen and (max-width: $bp-smallest) {
+    @include flex-wrap(wrap);
+  }
 }
 
 // Logo
@@ -24,13 +28,18 @@
   margin-left: 2rem;
 }
 
-// Search
+// Search Component, @@save to main lib@@
 .search {
   @include flex(0 0 40%);
 
   @include flexbox;
   @include align-items(center);
   @include justify-content(center);
+
+  @media only screen and (max-width: $bp-smallest) {
+    order: 1;
+    @include flex(0 0 100%);
+  }
 
   &__input {
     font-family: inherit;
