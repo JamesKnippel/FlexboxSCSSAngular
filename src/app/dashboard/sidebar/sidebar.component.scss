@@ -13,21 +13,30 @@
   // @include flex(0 0 18%);
 }
 
-.sidebar {
-  
-}
-
 .side-nav {
   font-size: 1.4rem;
   list-style: none;
   margin-top: 3.5rem;
+
+  @media only screen and (max-width: $bp-medium) {
+    @include flexbox;
+    margin: 0;
+  }
 
   &__item {
     position: relative;
 
     &:not(:last-child) {
       margin-bottom: .5rem;
+
+      @media only screen and (max-width: $bp-medium) {
+        margin-bottom: 0;
+      }
     }
+
+    @media only screen and (max-width: $bp-medium) {
+      @include flex(1);
+    }   
   }
 
   &__item::before {
@@ -68,6 +77,11 @@
 
     @include flexbox;
     @include align-items(center);
+
+    @media only screen and (max-width: $bp-medium) {
+      @include justify-content(center);
+      padding: 2rem;  
+    }
   }
 
   &__icon {
@@ -86,4 +100,8 @@
   text-align: center;
   padding: 2.5rem;
   color: var(--color-grey-light-4);
+
+   @media only screen and (max-width: $bp-medium) {
+    display: none;
+  }
 }
