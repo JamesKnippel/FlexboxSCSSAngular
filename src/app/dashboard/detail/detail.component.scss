@@ -10,6 +10,10 @@
   @media only screen and (max-width: $bp-medium) {
     padding: 3rem;
   }
+
+  @media only screen and (max-width: $bp-small) {
+    @include flex-direction(column);
+  }
 }
 
 .description {
@@ -23,6 +27,12 @@
   @media only screen and (max-width: $bp-medium) {
     padding: 2rem;
     margin-right: 3rem;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    @include flex-direction(column);
+    margin-right: 0;
+    margin-bottom: 3rem;
   }
 }
 
@@ -84,8 +94,7 @@
   }
 
   &__friends {
-
-  
+    @include flexbox;
   }
   &__photo {
     box-sizing: content-box;
@@ -182,6 +191,11 @@
 .cta {
   padding: 3.5rem 0;
   text-align: center;
+
+  @media only screen and (max-width: $bp-medium) {
+    padding: 2.5rem 0;
+    
+  }
 
   &__book-now {
     font-size: 2rem;
