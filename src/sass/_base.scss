@@ -37,6 +37,11 @@ Grey dark 3: #999
 
 }
 
+/* Media query variables */
+
+$bp-largest: 75rem; //1200px
+$bp-large: 68.75rem; //1100px
+
 * {
   margin: 0;
   padding: 0;
@@ -52,6 +57,10 @@ Grey dark 3: #999
 html {
   box-sizing: border-box;
   font-size: 62.5%; // 1 rem will equal 10px/brower defualt (16px)
+  
+  @media only screen and (max-width: $bp-large) {
+    font-size: 50%;
+  }
 }
 
 body {
